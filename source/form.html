@@ -26,7 +26,53 @@
   </header>
 
   <main class="page-main">
-    <h1 class="page-main__h1 visually-hidden">Оставьте свой отзыв</h1>
+    <h1 class="page-main__h1">Оставьте свой отзыв</h1>
+    <p class="page-main__intro">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также о<br>посещенных
+      Вами<br>достопримечательностях</p>
+
+    <form class="review">
+      <div class="user">
+        <h2 class="user__subtitle">Представтесь:</h2>
+        <label class="user__label">Имя*<input class="user__input" type="text" name="name" placeholder="Петр"></label>
+        <label class="user__label">Фамилия*<input class="user__input" type="text" name="surname"
+            placeholder="Иванов"></label>
+        <label class="user__label">Отчество*<input class="user__input" type="text" name="patronymic"
+            placeholder="Александрович"></label>
+      </div>
+      <div class="contacts">
+        <h2 class="contacts__subtitle">Контактная информация:</h2>
+        <label class="contacts__label">Контактный телефон*:<input class="contacts__input" type="tel" name="phone"
+            placeholder="Введите телефон"></label>
+        <label class="contacts__label">Электронная почта*:<input class="contacts__input" type="email" name="email"
+            placeholder="Введите e-mail"></label>
+      </div>
+      <div class="impression">
+        <h2 class="impression__subtitle">Ваше общее впечатление:</h2>
+        <input class="impression__input" type="radio" name="impression" value="positiv" id="positiv" checked>
+        <label class="impression__label" for="positiv">Скорее положительное</label>
+        <input class="impression__input" type="radio" name="impression" value="negativ" id="negativ">
+        <label class="impression__label" for="negativ">Скорее отрицательное</label>
+        <input class="impression__input" type="radio" name="impression" value="neutral" id="neutral">
+        <label class="impression__label" for="neutral">Затрудняюсь ответить</label>
+      </div>
+      <div class="attractions">
+        <h2 class="attractions__subtitle">Посещенные достопимечательности:</h2>
+        <input class="attractions__input" type="checkbox" name="bridge" id="bridge" checked>
+        <label class="attractions__label" for="bridge">Мост дьявола</label>
+        <input class="attractions__input" type="checkbox" name="mountain" id="mountain" checked>
+        <label class="attractions__label" for="mountain">Гора-Колокол</label>
+        <input class="attractions__input" type="checkbox" name="park" id="park" checked>
+        <label class="attractions__label" for="park">Слайд-парк</label>
+        <input class="attractions__input" type="checkbox" name="rocks" id="rocks">
+        <label class="attractions__label" for="rocks">Красные скалы</label>
+      </div>
+      <div class="emotions">
+        <h2 class="attractions__subtitle">Опишите свои эмоции</h2>
+        <label class="emotions__label"><input class="emotions__input" type="textarea" name="emotions" rows="5"
+            placeholder="Опишите подробно все свои восторги"></label>
+      </div>
+      <button class="review__button"></button>
+    </form>
 
 
     <footer class="page-footer">

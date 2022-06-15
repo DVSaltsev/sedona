@@ -14,40 +14,36 @@
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 
-
 <body class="page__body">
   <div class="page__wrapper">
-    <header class="page-header">
-      <a href="#" class="page-header__logo"></a>
-      <img class="page-header__logo-img" src="img/page-header/logotype-mobile.svg.svg" width="102" height="84"
-        alt="Логотип туристического городка Седона">
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <div class="main-nav__wrapper">
-          <a href="#" class="main-nav__link main-nav__link--active">Главная</a>
-          <a href="foto-video.html" class="main-nav__link">Фото и видео</a>
-          <a href="form" class=" main-nav__link">Форма отзыва</a>
-          <a href="#" class=" main-nav__link">HTMLAcademy</a>
+    <header class="header">
+      <a href="#" class="header__logo-link">
+        <img class="header__logo-img" src="img/header/logotype-mobile.svg.svg" width="102" height="84"
+          alt="Логотип туристического городка Седона">
+      </a>
+      <nav class="header__nav visually-hidden">
+        <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="header__nav-wrapper">
+          <a href="#" class="header__nav-link header__nav-link--active">Главная</a>
+          <a href="foto-video.html" class="header__nav-link">Фото и видео</a>
+          <a href="form" class="header__nav-link">Форма отзыва</a>
+          <a href="#" class="header__nav-link">HTMLAcademy</a>
         </div>
       </nav>
       <!-- Картинка Интро -->
-      <img class="page-header__text-title-img" src="img/page-header/text-title.svg" width="282px" height="214px"
+      <img class="header__title-img" src="img/header/text-title.svg" width="282px" height="214px"
         alt="Добро пожаловать в Седону!">
     </header>
-
-    <main class="page-main">
-      <h1 class="page-main__h1 visually-hidden">Sedona - сайт для туристов</h1>
-
+    <main class="page__main">
+      <h1 class="page__main-h1 visually-hidden">Sedona - сайт для туристов</h1>
       <section class="advantages">
         <h2 class="advantages__h2 visually-hidden">Наши преимущества</h2>
         <p class="advantages__slogan">Седона - небольшой городок в Аризоне, заслуживающий большего!</p>
         <p class="advantages__intro">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
-
         <div class="advantages__item">
           <h3 class="advantages__h3">Настоящий городок</h3>
           <p class="advantages__number">- №1 -</p>
           <p class="advantages__text-lid">Седона не аттракцион для туристов, там течет своя жизнь</p>
-
           <div class="subadvantages">
             <div class="subadvantages__item">
               <h4 class="subadvantages__title">Жилье</h4>
@@ -83,17 +79,13 @@
           <p class="advantages__number">- №5 -</p>
           <p class="advantages__text-lid">Большинство едет в Гранд Каньон и топится там</p>
         </div>
-
-
       </section>
-
       <section class="search">
         <h2 class="search__h2 visually-hidden"></h2>
         <p class="search__subtitle">Заинтересовались?</p>
         <p class="search__text">Укажите предполагаемые даты поездки, и мы покажем вам
           лучшие предложения гостиниц в Седоне </p> <a href="" class="search__button">Найти гостиницу</a>
       </section>
-
       <section class="map">
         <h2 class="map__h2 visually-hidden">Карта окрестностей Седоны</h2>
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1689135.172602565!2d-
@@ -102,25 +94,22 @@
 2sru!4v1654771811253!5m2!1sru!2sru" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
           referrerpolicy="no-referrer-when-downgrade"></iframe>
       </section>
-
     </main>
-
-    <footer class="page-footer">
-      <h2 class="page-footer__cocials visually-hidden">Социальные сети</h2>
-      <p class="page-footer__tag">#visitsedona</p>
-      <div class="page-footer__socials-wrapper">
-        <a href="#" class="page-footer__cocials-link">
-          <img class="page-footer__cocials-img" src="img/page-footer/icon-twitter.svg" alt="">
+    <footer class="footer">
+      <h2 class="footer__socials visually-hidden">Социальные сети</h2>
+      <p class="footer__tag">#visitsedona</p>
+      <div class="footer__socials-wrapper">
+        <a href="#" class="footer__cocials-link">
+          <img class="footer__cocials-img" src="img/page-footer/icon-twitter.svg" alt="">
         </a>
-        <a href="#" class="page-footer__cocials-link">
-          <img class="page-footer__cocials-img" src="img/page-footer/icon-facebook.svg" alt="">
+        <a href="#" class="footer__cocials-link">
+          <img class="footer__cocials-img" src="img/page-footer/icon-facebook.svg" alt="">
         </a>
-        <a href="#" class="page-footer__cocials-link"><img class="page-footer__cocials-img" src="
-                img/page-footer/icon-youtube.svg" alt="">
+        <a href="#" class="footer__cocials-link"><img class="footer__cocials-img" src="img/page-footer/icon-youtube.svg"
+            alt="">
         </a>
       </div>
     </footer>
-
 
   </div>
 </body>

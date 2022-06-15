@@ -1,14 +1,14 @@
 // Начните писать стили здесь
-// Global
-
-@import "global/variables.scss";
+// Global blocks
+@import "global blocks/fonts.scss";
+@import "global blocks/variables.scss";
+@import "global blocks/page.scss";
+@import "global blocks/visually-hidden.scss";
 // @import "global/global.scss";
-@import "global/fonts.scss";
-@import "global/visually-hidden.scss";
 
-//Blocks
-@import "blocks/page.scss";
-// @import "blocks/page-header.scss";
+
+// Structural blocks
+@import "structural blocks/header.scss";
 // @import "blocks/main-nav.scss";
 // @import "blocks/advantages.scss";
 // @import "blocks/city-advantages.scss";

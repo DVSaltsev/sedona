@@ -1,0 +1,124 @@
+.advantages {}
+
+.advantages__h2 {}
+
+.advantages__slogan {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+.advantages__intro {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+}
+
+.advantages__item {}
+
+.advantages__h3-photo {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.advantages__number-photo {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.advantages__text-lid-photo {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  mix-blend-mode: normal;
+}
+
+.advantages__item-simple {
+  background: #EEEEEE;
+}
+
+.advantages__h3 {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+.advantages__number {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+}
+
+.advantages__text-lid {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+}
+
+.advantages__box-photo {
+  background: #81B3D2;
+  mix-blend-mode: normal;
+}
+
+.advantages__box-photo-town::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 512px;
+  min-height: 256px;
+  background-repeat: no-repeat;
+  // background-position: center bottom;
+  background-image: url(../img/advantages/photo-city@1x1.jpg);
+}
+
+.advantages__box-photo-bridge::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 512px;
+  min-height: 256px;
+  background-repeat: no-repeat;
+  // background-position: center bottom;
+  background-image: url(../img/advantages/photo-bridge@1x1.jpg);
+}

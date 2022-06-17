@@ -1,0 +1,94 @@
+.footer {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.footer__tag {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+}
+
+.footer__socials-wrapper {
+  display: flex;
+}
+
+.footer__cocials-link {
+  width: 47px;
+  min-height: 48px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__twitter::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 18px;
+  min-height: 15px;
+  background-image: url(../img/page-footer/icon-twitter.svg);
+  background-repeat: no-repeat;
+}
+
+// background: #5496BD;
+
+.footer__twitter:active {
+  background: #5496BD;
+}
+
+.footer__twitter:active::after {
+  opacity: 0.3;
+}
+
+.footer__facebook::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 9px;
+  min-height: 19px;
+  background-image: url(../img/page-footer/icon-facebook.svg);
+  background-repeat: no-repeat;
+}
+
+.footer__youtube::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 20px;
+  min-height: 14px;
+  background-image: url(../img/page-footer/icon-youtube.svg);
+  background-repeat: no-repeat;
+}
+
+.footer__cocials-img {}
+
+.footer__copyright {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+  display: flex;
+  align-items: center;
+}
+
+.footer__copyright::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 27px;
+  min-height: 35px;
+  background-image: url(../img/page-footer/htmlacademy.svg);
+  margin-left: 10px;
+}

@@ -4,13 +4,22 @@
 @import "global blocks/variables.scss";
 @import "global blocks/page.scss";
 @import "global blocks/visually-hidden.scss";
+@import "global blocks/button-link.scss";
+// @import "global blocks/subtitle.scss";
+// @import "global blocks/intro.scss";
+
 // @import "global/global.scss";
 
 
 // Structural blocks
 @import "structural blocks/header.scss";
+@import "structural blocks/advantages.scss";
+@import "structural blocks/subadvantages.scss";
+@import "structural blocks/search.scss";
+@import "structural blocks/map.scss";
+@import "structural blocks/footer.scss";
 // @import "blocks/main-nav.scss";
-// @import "blocks/advantages.scss";
+
 // @import "blocks/city-advantages.scss";
 // @import "blocks/search.scss";
 // @import "blocks/social.scss";

@@ -1,6 +1,4 @@
-.header {
-
-}
+.header {}
 
 .header__nav-wrapper {
   min-height: 56px;
@@ -13,11 +11,60 @@
 
 .header__logo-img {}
 
-.header__nav-toggle {}
+.header__nav-toggle {
+  display: block;
+  box-sizing: border-box;
+  width: 23px;
+  min-height: 22px;
+  background-image: url(../img/header/icon-menu-toogle.svg);
+  background-repeat: no-repeat;
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
 
 
 
-.header__nav-link {}
+  // text-decoration: none;
+  // padding: 10px;
+  // background: #81B3D2;
+  // mix-blend-mode: normal;
+  // font-family: 'PT Sans';
+  // font-style: normal;
+  // font-weight: 700;
+  // font-size: 21px;
+  // line-height: 26px;
+  // text-transform: uppercase;
+  // color: #FFFFFF;
+  // // vertical-align: middle;
+  // align-items: center;
+  // justify-content: center;
+  // cursor: pointer;
+}
+
+
+
+.header__nav-link {
+  display: flex;
+  box-sizing: border-box;
+  text-decoration: none;
+  padding: 10px;
+  background: #81B3D2;
+  mix-blend-mode: normal;
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  // vertical-align: middle;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+
+}
 
 .header__nav-link--active {}
 

@@ -1,19 +1,19 @@
 .page {
-  font-family: "PT Sans", "Arial", sans-serif;
-  font-size: 14px;
-  line-height: 26px;
-  color: $black;
-  text-transform: uppercase;
+  //   font-family: "PT Sans", "Arial", sans-serif;
+  //   font-size: 14px;
+  //   line-height: 26px;
+  //   color: $black;
+  //   text-transform: uppercase;
 }
 
-.page__body {
+.page-body {
   min-width: 320px;
   margin: 0;
 
   // background-color: $grey-200;
 }
 
-.page__wrapper {
+.page-wrapper {
   display: grid;
   grid-template-rows: min-content 1fr min-content;
   align-content: start;
@@ -28,9 +28,9 @@
 
 .page-main {}
 
-.page-main__h1 {}
+.page-main-h1 {}
 
-
+.page-main-intro {}
 
 // @media (min-width: $tablet-width) {
 //   .page__wrapper {

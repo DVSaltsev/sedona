@@ -5,6 +5,11 @@
 @import "global blocks/page.scss";
 @import "global blocks/visually-hidden.scss";
 @import "global blocks/button-link.scss";
+
+@import "global blocks/form-subtitle.scss";
+@import "global blocks/form-input.scss";
+@import "global blocks/form-label.scss";
+@import "global blocks/button-button.scss";
 // @import "global blocks/subtitle.scss";
 // @import "global blocks/intro.scss";
 
@@ -12,12 +17,21 @@
 
 
 // Structural blocks
+@import "structural blocks/index.scss";
+@import "structural blocks/form.scss";
+@import "structural blocks/photo-video.scss";
 @import "structural blocks/header.scss";
 @import "structural blocks/advantages.scss";
 @import "structural blocks/subadvantages.scss";
 @import "structural blocks/search.scss";
 @import "structural blocks/map.scss";
 @import "structural blocks/footer.scss";
+@import "structural blocks/user.scss";
+@import "structural blocks/contacts.scss";
+@import "structural blocks/impression.scss";
+@import "structural blocks/attractions.scss";
+@import "structural blocks/emotions.scss";
+
 // @import "blocks/main-nav.scss";
 
 // @import "blocks/city-advantages.scss";

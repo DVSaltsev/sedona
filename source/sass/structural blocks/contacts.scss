@@ -1,14 +1,40 @@
-.contacts {
+.contacts {}
+
+.form-subtitle {}
+
+.contacts__subtitle {}
+
+.form-label {}
+
+.contacts__label {}
+
+.form-input {}
+
+.contacts__input {}
+
+.contacts__icon {
+  width: 58px;
+  min-height: 58px;
+  background-color: #E6E6E6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.form-subtitle {
+
+
+
+.contacts__icon-phone::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/form/phone.svg);
+  background-repeat: no-repeat;
 }
-.contacts__subtitle {
-}
-.form-label {
-}
-.contacts__label {
-}
-.form-input {
-}
-.contacts__input {
+
+.contacts__icon-email::after {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-image: url(../img/form/mail.svg);
+  background-repeat: no-repeat;
 }

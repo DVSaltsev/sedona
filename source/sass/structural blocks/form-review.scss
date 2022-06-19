@@ -1,0 +1,44 @@
+.form-review__button {
+  width: 280px;
+  min-height: 58px;
+}
+
+.form-input {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: #000000;
+  mix-blend-mode: normal;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 18px 22px 14px 22px;
+}
+
+.form-input::placeholder {
+  color: black;
+}
+
+.form-label {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #333333;
+  mix-blend-mode: normal;
+
+}
+
+.form-subtitle {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: #000000;
+  mix-blend-mode: normal;
+}

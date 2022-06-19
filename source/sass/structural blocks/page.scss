@@ -6,25 +6,16 @@
   //   text-transform: uppercase;
 }
 
-.page-body {
-  min-width: 320px;
-  margin: 0;
 
-  // background-color: $grey-200;
-}
 
-.page-wrapper {
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
-  align-content: start;
-  min-height: 100vh;
-  background-color: $white;
-  // background-color: $black;
-  // width: 320px;
-  // margin: 0 auto;
-  // box-shadow: 0 5px 15px 0 rgba($black, 0.2);
-  // z-index: 5;
-}
+// .page-wrapper {
+
+//   // background-color: $black;
+//   // width: 320px;
+//   // margin: 0 auto;
+//   // box-shadow: 0 5px 15px 0 rgba($black, 0.2);
+//   // z-index: 5;
+// }
 
 .page-main {}
 

@@ -2,13 +2,9 @@
 // Global blocks
 @import "global blocks/fonts.scss";
 @import "global blocks/variables.scss";
-@import "global blocks/page.scss";
+
 @import "global blocks/visually-hidden.scss";
 @import "global blocks/button-link.scss";
-
-@import "global blocks/form-subtitle.scss";
-@import "global blocks/form-input.scss";
-@import "global blocks/form-label.scss";
 @import "global blocks/button-button.scss";
 // @import "global blocks/subtitle.scss";
 // @import "global blocks/intro.scss";
@@ -17,10 +13,16 @@
 
 
 // Structural blocks
-@import "structural blocks/index.scss";
-@import "structural blocks/form.scss";
-@import "structural blocks/photo-video.scss";
+// @import "structural blocks/index.scss";
+@import "structural blocks/page.scss";
+@import "structural blocks/page-body.scss";
 @import "structural blocks/header.scss";
+@import "structural blocks/page-main.scss";
+@import "structural blocks/form-review.scss";
+
+
+@import "structural blocks/photo-video.scss";
+
 @import "structural blocks/advantages.scss";
 @import "structural blocks/subadvantages.scss";
 @import "structural blocks/search.scss";

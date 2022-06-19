@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="page form" lang="ru">
+<html class="page" lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -14,7 +14,7 @@
   <link rel="preload" href="fonts/ptsansbold.woff2" as="font" type="font/woff2" crossorigin> -->
 </head>
 
-<body class="page-body form__body">
+<body class="page-body">
   <header class="header">
     <div class="header__nav-wrapper">
       <a href="#" class="header__logo-link">
@@ -24,7 +24,7 @@
       <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
       <nav class="header__nav">
         <a class="header__nav-link" href="index.html">Главная</a>
-        <a class="header__nav-link" href="foto-video.html">Фото и видео</a>
+        <a class="header__nav-link" href="photo-video.html">Фото и видео</a>
         <a class="header__nav-link" href="#">Форма отзыва</a>
         <a class="header__nav-link" href="#">HTMLAcademy</a>
       </nav>
@@ -36,13 +36,13 @@
     </div>
   </header>
 
-  <main class="page-main form__main">
-    <h1 class="page-main-h1 form__h1">Оставьте свой отзыв</h1>
-    <p class="page-main-intro form__intro">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также
+  <main class="page-main">
+    <h1 class="page-main__h1">Оставьте свой отзыв</h1>
+    <p class="page-main__intro">Помогите нашим отелям стать лучше!<br>Оставьте отзыв о них, а также
       о<br>посещенных
       Вами<br>достопримечательностях</p>
 
-    <form class="form__review" action="https://echo.htmlacademy.ru" method="get">
+    <form class="form-review" action="https://echo.htmlacademy.ru" method="get">
       <div class="user">
         <h2 class="form-subtitle user__subtitle">Представтесь:</h2>
         <label class="form-label user__label">Имя*<input class="form-input user__input" type="text" name="name"
@@ -88,7 +88,7 @@
         <label class="emotions__label"><input class="form-input emotions__input" type="textarea" name="emotions"
             rows="5" placeholder="Опишите подробно все свои восторги Опишите подробно все свои восторги"></label>
       </div>
-      <button class="button-button form__button">Отправить отзыв</button>
+      <button class="button-button form-review__button">Отправить отзыв</button>
     </form>
   </main>
   <footer class="footer">

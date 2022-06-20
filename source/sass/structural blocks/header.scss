@@ -23,27 +23,7 @@
   font: inherit;
   color: inherit;
   cursor: pointer;
-
-
-
-  // text-decoration: none;
-  // padding: 10px;
-  // background: #81B3D2;
-  // mix-blend-mode: normal;
-  // font-family: 'PT Sans';
-  // font-style: normal;
-  // font-weight: 700;
-  // font-size: 21px;
-  // line-height: 26px;
-  // text-transform: uppercase;
-  // color: #FFFFFF;
-  // // vertical-align: middle;
-  // align-items: center;
-  // justify-content: center;
-  // cursor: pointer;
 }
-
-
 
 .header__nav-link {
   display: flex;
@@ -71,22 +51,12 @@
 .header__main-banner {
   background-image: url(../img/header/header-back-mobile.jpg);
   background-repeat: no-repeat;
-  // min-height: 389px;
-  // background-color: aqua;
-  // padding-top: 58px;
-  // height: 389px;
-  // background-size: 1200px 57px, cover;
-  // padding-top: 90px;
-  // text-align: center;
-  // position: relative;
-  // height: 158px;
-  // background-image: url(../img/intro-triangle.svg), url(../img/back/back-mobile.jpg);
-  // background-repeat: no-repeat;
-  // background-position-x: 50%;
-  // background-position-y: 100%;
-  // background-size: 1200px 57px, cover;
-  // padding-top: 52px;
-  // text-align: center;
 }
 
 .header__title-img {}
+
+@media (min-width: @tablet-width) {
+
+}
+
+

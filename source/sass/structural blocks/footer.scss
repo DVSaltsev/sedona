@@ -1,7 +1,10 @@
 .footer {
   display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  gap: 100px;
+  // gap: 100px;
+
 }
 
 .footer__tag {

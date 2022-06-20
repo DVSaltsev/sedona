@@ -1,0 +1,23 @@
+.page-wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
+  min-height: 100vh;
+  background-color: #ffffff;
+  width: 320px;
+  margin: 0 auto;
+  box-shadow: 0 5px 15px 0 rgb(0 0 0 / 20%);
+  box-sizing: border-box;
+}
+
+@media (min-width: $tablet-width) {
+  .page__wrapper {
+    width: $tablet-width;
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .page__wrapper {
+//     width: $desktop-width;
+//   }
+// }

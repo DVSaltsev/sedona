@@ -4,5 +4,12 @@
 
 .map__iframe {
   width: 100%;
-  height: auto;
+  min-height: 320px;
+}
+
+@media (min-width: $tablet-width) {
+
+  .map__iframe {
+    min-height: 350px;
+  }
 }

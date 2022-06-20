@@ -95,3 +95,14 @@
   background-image: url(../img/page-footer/htmlacademy.svg);
   margin-left: 10px;
 }
+
+@media (min-width: $tablet-width) {
+  .footer {
+    // display: flex;
+    flex-direction: row;
+    // justify-content: space-between;
+    // align-items: center;
+    // // gap: 100px;
+
+  }
+}

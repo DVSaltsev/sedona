@@ -1,4 +1,6 @@
-.subadvantages {}
+.subadvantages {
+  padding-left: 69px;
+}
 
 .subadvantages__item {}
 
@@ -24,6 +26,13 @@
   mix-blend-mode: normal;
 }
 
+.subadvantages__icon {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  // margin-left: 69px;
+}
+
 .subadvantages__icon-house::before {
   content: "";
   display: block;
@@ -32,6 +41,8 @@
   height: 38px;
   background-repeat: no-repeat;
   background-image: url(../img/advantages/icon-house.svg);
+  margin-left: -52px;
+
 }
 
 .subadvantages__icon-gift::before {
@@ -42,6 +53,8 @@
   height: 38px;
   background-repeat: no-repeat;
   background-image: url(../img/advantages/icon-gift.svg);
+  margin-left: -50px;
+
 }
 
 .subadvantages__icon-burger::before {
@@ -52,4 +65,29 @@
   height: 38px;
   background-repeat: no-repeat;
   background-image: url(../img/advantages/icon-burger.svg);
+  margin-left: -50px;
+
+}
+
+@media (min-width: $tablet-width) {
+  .subadvantages {
+    padding-left: 0px;
+    display: flex;
+    gap: 2.6%;
+    min-height: 330px;
+  }
+
+  .subadvantages__item {
+    display: flex;
+    flex-direction: column;
+    width: 31.6%;
+
+  }
+
+  .subadvantages__icon {
+    flex-direction: column;
+    // margin-left: 69px;
+  }
+
+
 }

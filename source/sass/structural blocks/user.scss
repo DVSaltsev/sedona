@@ -1,7 +1,24 @@
-.user {}
+.user {
+  padding: 0 20px;
+}
 
-.user__subtitle {}
+.user__subtitle {
+  text-align: center;
+}
 
-.user__label {}
+.user__label {
+  //margin-right: 30px;
+  display: flex;
+  // width: 100%;
+}
 
-.user__input {}
+.user__input {
+  margin-left: 30px;
+  width: 130px;
+  // flex-grow: 1;
+
+}
+
+// .user__input::placeholder {
+//   margin-left: 30px;
+// }

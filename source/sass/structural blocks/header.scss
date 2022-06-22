@@ -60,7 +60,17 @@
 .header__main-banner {
   background-image: url(../img/header/header-back-mobile.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 157px;
 }
+
+.header__main-banner-form {
+  background-image: url(../img/header/header-back-mobile.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 157px;
+}
+
 
 .header__title-img {}
 
@@ -110,9 +120,10 @@
     line-height: 26px;
     text-transform: uppercase;
     color: #000000;
-    // vertical-align: middle;
-
-
   }
 
+  .header__main-banner {
+    background-image: url(../img/header/back-desktop.jpg);
+    background-size: cover;
+  }
 }

@@ -1,16 +1,25 @@
-.contacts {}
+.contacts {
+  margin-left: 42px;
+}
 
 .form-subtitle {}
 
-.contacts__subtitle {}
+.contacts__subtitle {
+  // text-align: center;
+}
 
 .form-label {}
 
-.contacts__label {}
+.contacts__label {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .form-input {}
 
-.contacts__input {}
+.contacts__input {
+  flex-grow: 1;
+}
 
 .contacts__icon {
   width: 58px;
@@ -37,4 +46,11 @@
   height: 18px;
   background-image: url(../img/form/mail.svg);
   background-repeat: no-repeat;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts {
+    grid-column: 1/-1;
+  }
+
 }

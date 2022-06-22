@@ -2,10 +2,22 @@
 
 .form-subtitle {}
 
-.emotions__subtitle {}
+.emotions__subtitle {
+  text-align: center;
+}
 
 .emotions__label {}
 
 .form-input {}
 
 .emotions__input {}
+
+@media (min-width: $tablet-width) {
+
+  .emotions {
+    grid-column: 1/-1;
+
+  }
+
+
+}

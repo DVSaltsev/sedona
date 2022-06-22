@@ -2,7 +2,10 @@
 
 .form-subtitle {}
 
-.attractions__subtitle {}
+.attractions__subtitle {
+  text-align: center;
+
+}
 
 .attractions__input {}
 
@@ -17,4 +20,18 @@
   color: #000000;
   mix-blend-mode: normal;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+  .attractions {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .attractions__subtitle {
+
+    grid-column: 1/-1;
+
+  }
 }

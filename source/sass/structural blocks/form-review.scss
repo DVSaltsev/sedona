@@ -1,3 +1,6 @@
+.form-review {}
+
+
 .form-review__button {
   width: 280px;
   min-height: 58px;
@@ -13,7 +16,8 @@
   mix-blend-mode: normal;
   background-color: #f2f2f2;
   border: none;
-  padding: 18px 22px 14px 22px;
+  // padding: 18px 22px 14px 22px;
+
 }
 
 .form-input::placeholder {
@@ -41,4 +45,11 @@
   text-transform: uppercase;
   color: #000000;
   mix-blend-mode: normal;
+}
+
+@media (min-width: $tablet-width) {
+  .form-review {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
 }

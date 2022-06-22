@@ -1,6 +1,8 @@
 .impression {}
 
-.impression__subtitle {}
+.impression__subtitle {
+  text-align: center;
+}
 
 .impression__input {}
 
@@ -13,4 +15,13 @@
   color: #000000;
   mix-blend-mode: normal;
   background-color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) {
+
+  .impression {
+    order: -1;
+  }
+
+
 }

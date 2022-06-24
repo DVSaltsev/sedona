@@ -1,5 +1,6 @@
 .search {
   margin-bottom: 49px;
+  padding: 0 20px;
 }
 
 .search__h2 {}
@@ -29,11 +30,23 @@
 }
 
 .search__button {
-  width: 280px;
+  width: 100%;
   min-height: 58px;
-  margin: 0px auto;
+  // margin: 0px auto;
 }
 
 // .search__text-button {
 //   vertical-align: middle;
 // }
+@media (min-width: $tablet-width) {
+  .search__button {
+    width: 59.63%;
+  }
+
+  .search {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+}

@@ -15,29 +15,24 @@
 </head>
 
 <body class="page__body">
-
   <div class="page-wrapper">
+
     <header class="header">
-      <div class="header__nav-wrapper">
+      <div class="header__nav-wrapper header__nav--opened">
         <a href="#" class="header__logo-link">
           <img class="header__logo-img" src="img/header/logotype-mobile.svg" width="102" height="84"
             alt="Логотип туристического городка Седона">
         </a>
         <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-        <nav class="header__nav">
-
-          <div class="header__left-link">
-            <a class="header__nav-link " href="index.html">Главная</a>
-            <a class="header__nav-link" href="#">Фото и видео</a>
-          </div>
-          <div class="header__right-link">
-            <a class="header__nav-link" href="form.html">Форма отзыва</a>
-            <a class="header__nav-link" href="#">HTMLAcademy</a>
-          </div>
+        <nav class="header__nav ">
+          <a class="header__nav-link " href="index.html">Главная</a>
+          <a class="header__nav-link" href="photo-video.html">Фото и видео</a>
+          <a class="header__nav-link" href="form.html">Форма отзыва</a>
+          <a class="header__nav-link" href="#">HTMLAcademy</a>
         </nav>
       </div>
-      <div class="header__main-banner">
-        <img class="header__title-img" src="img/header/form-text-title.svg" width="282px" height="214px"
+      <div class="header__main-banner header__main-banner--catalog ">
+        <img class="header__title-img" src="img/header/SEDONA-mobile.svg" width="282px" height="214px"
           alt="Добро пожаловать в Седону!">
       </div>
     </header>
@@ -58,36 +53,48 @@
             <img class="photo__img" src="img/photo-video/photo-1-mobile.jpg" width="280px" height="280px"
               alt="Закат на въезде в город">
           </a>
-          <p class="photo__name-img">Неродные просторы</p>
-          <p class="photo__name-author">Автор фото: Борис</p>
-          <p class="photo__photo-like"><span class="photo__num">1350</span></p>
+
+
+          <div class="photo__wrapper-info-photo">
+            <p class="photo__name-img">Неродные просторы</p>
+            <p class="photo__name-author">Автор фото: Борис</p>
+            <p class="photo__photo-like"><span class="photo__num">1350</span></p>
+          </div>
+
+
         </div>
         <div class="photo__item">
           <a class="photo__link" href="#">
             <img class="photo__img" src="img/photo-video/photo-2-mobile.jpg" width="280px" height="280px"
               alt="Цветущий кустарник среди холмов">
           </a>
-          <p class="photo__name-img">Местная растительность</p>
-          <p class="photo__name-author">Автор фото: Сергей</p>
-          <p class="photo__photo-like"><span class="photo__num">143</span></p>
+          <div class="photo__wrapper-info-photo">
+            <p class="photo__name-img">Местная растительность</p>
+            <p class="photo__name-author">Автор фото: Сергей</p>
+            <p class="photo__photo-like"><span class="photo__num">143</span></p>
+          </div>
         </div>
         <div class="photo__item">
           <a class="photo__link" href="#">
             <img class="photo__img" src="img/photo-video/photo-3-mobile.jpg" width="280px" height="280px"
               alt="Две ленты дорогв живописном лесу">
           </a>
-          <p class="photo__name-img">Дорога на север</p>
-          <p class="photo__name-author">Автор фото: Петр</p>
-          <p class="photo__photo-like"><span class="photo__num">96</span></p>
+          <div class="photo__wrapper-info-photo">
+            <p class="photo__name-img">Дорога на север</p>
+            <p class="photo__name-author">Автор фото: Петр</p>
+            <p class="photo__photo-like"><span class="photo__num">96</span></p>
+          </div>
         </div>
         <div class="photo__item">
           <a class="photo__link" href="#">
             <img class="photo__img" src="img/photo-video/photo-4-desktop 1.jpg" width="280px" height="280px"
               alt="Проход по обрывистой скале">
           </a>
-          <p class="photo__name-img">Мост дьявола</p>
-          <p class="photo__name-author">Автор фото: Антон</p>
-          <p class="photo__photo-like"><span class="photo__num">254</span></p>
+          <div class="photo__wrapper-info-photo">
+            <p class="photo__name-img">Мост дьявола</p>
+            <p class="photo__name-author">Автор фото: Антон</p>
+            <p class="photo__photo-like"><span class="photo__num">254</span></p>
+          </div>
         </div>
 
       </section>

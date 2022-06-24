@@ -13,7 +13,7 @@
 .photo__img {
   width: 100%;
   min-height: 280px;
-  object-fit: contain;
+  object-fit: cover;
   display: block;
 }
 
@@ -23,7 +23,6 @@
 
 .photo__photo-like {
   display: flex;
-
 }
 
 .photo__num {
@@ -45,8 +44,8 @@
   height: 21px;
   background-image: url(../img/photo-video/like-icon.svg);
   background-repeat: no-repeat;
-  background-size: cover;
-  margin-right: 15px;
+  background-size: contain;
+  // margin-right: 15px;
   display: block;
 
 }
@@ -82,31 +81,97 @@
     grid-column: 1/-1;
   }
 
-}
-
-@media (min-width:$tablet-width) {
-  .photo {
-    margin: 0 60px;
-    padding: 0;
+  .photo__wrapper-info-photo {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr min-content;
+    grid-template-rows: 1fr 1fr;
+    padding: 0 20px;
   }
 
-  .photo__item-first {
-    grid-column: 1/-1;
+  .photo__name-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
   }
 
+  .photo__name-author {
+    grid-column: 1/2;
+    grid-row: 2/-1;
+  }
+
+  .photo__photo-like {
+    grid-column: 2/-1;
+    grid-row: 1/-1;
+    display: flex;
+    align-items: center;
+    // margin-right: 20px;
+  }
+
+  .photo__num {
+    display: block;
+  }
+
+  .photo__photo-like::before {
+    margin-right: 20px;
+    padding-bottom: 10px;
+  }
+
+  .photo__name-img {
+    margin: 0;
+    padding-top: 22px;
+  }
+
+  .photo__name-author {
+    margin: 0;
+    padding-bottom: 22px;
+  }
 }
+
+
 
 @media (min-width:$desktop-width) {
+
+
   .photo {
-    margin: 0 60px;
+    margin: 0 0px;
     padding: 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
   }
+
   .photo__item-first {
     grid-column: 1/-1;
   }
 
+  .photo__item {
+    position: relative;
+  }
+
+  .photo__wrapper-info-photo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    // color: #ffffff;
+
+    background-color: rgba(0, 0, 0, 0.3);
+    ;
+  }
+
+  .photo__name-img {
+    color: #ffffff;
+
+  }
+
+  .photo__name-author {
+    color: #ffffff;
+  }
+
+  .photo__num {
+    color: #ffffff;
+  }
+
+  .photo__photo-like::before {
+    background-image: url(../img/photo-video/like-icon-white.svg);
+
+  }
 }

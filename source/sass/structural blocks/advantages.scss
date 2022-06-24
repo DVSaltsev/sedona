@@ -6,6 +6,15 @@
 
 .advantages__item {}
 
+
+.advantages__item-text {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+}
+
 .advantages__h3-photo {
   font-family: 'PT Sans';
   font-style: normal;
@@ -42,8 +51,12 @@
   text-align: center;
 }
 
-.advantages__item-simple {
+.advantages__simple {
   background: #EEEEEE;
+}
+
+.advantages__item-simple {
+  // padding: 0 20px;
 }
 
 .advantages__h3 {
@@ -88,6 +101,10 @@
   // display: none;
 }
 
+.advantages__wrapper-item-photo-town {
+  // padding: 0 20px;
+}
+
 .advantages__box-photo-town::after {
   content: "";
   display: block;
@@ -99,6 +116,10 @@
   background-image: url(../img/advantages/photo-city@1x1.jpg);
 }
 
+.advantages__wrapper-item-photo-bridge {
+  // padding: 0 20px;
+}
+
 .advantages__box-photo-bridge::after {
   content: "";
   display: block;
@@ -108,6 +129,19 @@
   background-repeat: no-repeat;
   // background-position: center bottom;
   background-image: url(../img/advantages/photo-bridge@1x1.jpg);
+}
+
+@media (max-width: $mobile-width-only) {
+  .advantages__item-simple::before {
+    // border-top: 1px solid #D6D6D6;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #D6D6D6;
+
+  }
+
 }
 
 @media (min-width: $tablet-width) {
@@ -138,24 +172,14 @@
   }
 
   .advantages__simple {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     gap: 2.6%;
     min-height: 256px;
   }
 
 
 
-  // .subadvantages__item {
-  //   display: flex;
-  //   flex-direction: column;
-  //   width: 31.6%;
-
-  // }
-
-  // .subadvantages__icon {
-  //   flex-direction: column;
-  //   // margin-left: 69px;
-  // }
 
 
 

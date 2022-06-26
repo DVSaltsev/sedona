@@ -18,10 +18,15 @@
   <div class="page-wrapper">
 
     <header class="header">
-      <div class="header__nav-wrapper header__nav--opened">
+      <div class="header__nav-wrapper header__nav--closed">
         <a href="#" class="header__logo-link">
-          <img class="header__logo-img" src="img/header/logotype-mobile.svg" width="102" height="84"
-            alt="Логотип туристического городка Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/header/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logotype-tablet.svg">
+            <img class="header__logo-img" src="img/header/logotype-mobile.svg" width="102" height="84"
+              alt="Логотип туристического городка Седона">
+          </picture>
+
         </a>
         <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="header__nav ">
@@ -31,7 +36,7 @@
           <a class="header__nav-link" href="#">HTMLAcademy</a>
         </nav>
       </div>
-      <div class="header__main-banner">
+      <div class="header__main-banner header__main-banner--index">
         <img class="header__title-img" src="img/header/text-title.svg" width="282px" height="214px"
           alt="Добро пожаловать в Седону!">
       </div>
@@ -129,6 +134,7 @@
     </footer>
 
   </div>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

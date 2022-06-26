@@ -4,12 +4,18 @@
 
 .attractions__subtitle {
   text-align: center;
+}
 
+.attraction__wrapper-checkbox {
+  position: relative;
+  margin: 0 20px;
+  min-height: 56px;
+  display: flex;
+  align-items: center;
+  // padding-left: 56px;
 }
 
 .attractions__input {}
-
-.form-input {}
 
 .attractions__label {
   font-family: 'PT Sans';
@@ -20,7 +26,64 @@
   color: #000000;
   mix-blend-mode: normal;
   background-color: #f2f2f2;
+  margin-left: 64px;
+  cursor: pointer;
 }
+
+.attractions__input:checked+.attractions__label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 18px;
+  // left: 21px;
+  width: 24px;
+  height: 24px;
+  // background-color: #333333;
+  // border-radius: 50%;
+  background-image: url(../img/form/tick.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.attractions__input:hover+.attractions__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0%;
+  width: 56px;
+  height: 56px;
+  background-color: $grey-300;
+  border-radius: 5%;
+}
+
+.attractions__input:focus+.attractions__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0%;
+  width: 56px;
+  height: 56px;
+  background-color: $grey-300;
+  border-radius: 5%;
+}
+
+.attractions__input:active+.attractions__label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  left: 0%;
+  width: 56px;
+  height: 56px;
+  background-color: $grey-400;
+  border-radius: 5%;
+}
+
+
+
 
 @media (min-width: $tablet-width) {
   .attractions {

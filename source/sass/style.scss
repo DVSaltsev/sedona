@@ -5,6 +5,10 @@
 @import "global blocks/visually-hidden.scss";
 @import "global blocks/button-link.scss";
 @import "global blocks/button-button.scss";
+@import "global blocks/modal.scss";
+@import "global blocks/modal-h3.scss";
+@import "global blocks/modal-description.scss";
+@import "global blocks/form-input-list.scss";
 // @import "global blocks/container-center.scss";
 
 
@@ -28,3 +32,5 @@
 @import "structural blocks/photo-video.scss";
 @import "structural blocks/photo.scss";
 @import "structural blocks/video.scss";
+@import "structural blocks/modal-failure.scss";
+@import "structural blocks/modal-sussecs.scss";

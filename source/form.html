@@ -18,10 +18,14 @@
   <div class="page-wrapper">
 
     <header class="header">
-      <div class="header__nav-wrapper header__nav--opened">
+      <div class="header__nav-wrapper header__nav--closed">
         <a href="#" class="header__logo-link">
-          <img class="header__logo-img" src="img/header/logotype-mobile.svg" width="102" height="84"
-            alt="Логотип туристического городка Седона">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/header/logotype-desktop.svg">
+            <source media="(min-width: 768px)" srcset="img/header/logotype-tablet.svg">
+            <img class="header__logo-img" src="img/header/logotype-mobile.svg" width="102" height="84"
+              alt="Логотип туристического городка Седона">
+          </picture>
         </a>
         <button class="header__nav-toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <nav class="header__nav ">
@@ -69,35 +73,38 @@
         <div class="impression">
           <h2 class="form-subtitle impression__subtitle">Ваше общее впечатление:</h2>
           <div class="impression__wrapper-radio">
-            <input class="impression__input" type="radio" name="impression" value="positiv" id="positiv" checked>
+            <input class="impression__input form-input-list" type="radio" name="impression" value="positiv" id="positiv"
+              checked>
             <label class="impression__label" for="positiv">Скорее положительное</label>
           </div>
           <div class="impression__wrapper-radio">
-            <input class="impression__input" type="radio" name="impression" value="negativ" id="negativ">
+            <input class="impression__input form-input-list" type="radio" name="impression" value="negativ"
+              id="negativ">
             <label class="impression__label" for="negativ">Скорее отрицательное</label>
           </div>
           <div class="impression__wrapper-radio">
-            <input class="impression__input" type="radio" name="impression" value="neutral" id="neutral">
+            <input class="impression__input form-input-list" type="radio" name="impression" value="neutral"
+              id="neutral">
             <label class="impression__label" for="neutral">Затрудняюсь ответить</label>
           </div>
         </div>
         <div class="attractions">
           <h2 class="form-subtitle attractions__subtitle">Посещенные достопримечательности:</h2>
 
-          <div class="attraction__wrapper-checkbox"><input class="attractions__input" type="checkbox" name="bridge"
-              id="bridge" checked>
+          <div class="attraction__wrapper-checkbox"><input class="attractions__input form-input-list" type="checkbox"
+              name="bridge" id="bridge" checked>
             <label class="attractions__label" for="bridge">Мост дьявола</label>
           </div>
-          <div class="attraction__wrapper-checkbox"><input class="attractions__input" type="checkbox" name="mountain"
-              id="mountain" checked>
+          <div class="attraction__wrapper-checkbox"><input class="attractions__input form-input-list" type="checkbox"
+              name="mountain" id="mountain" checked>
             <label class="attractions__label" for="mountain">Гора-Колокол</label>
           </div>
-          <div class="attraction__wrapper-checkbox"><input class="attractions__input" type="checkbox" name="park"
-              id="park" checked>
+          <div class="attraction__wrapper-checkbox"><input class="attractions__input form-input-list" type="checkbox"
+              name="park" id="park" checked>
             <label class="attractions__label" for="park">Слайд-парк</label>
           </div>
-          <div class="attraction__wrapper-checkbox"><input class="attractions__input" type="checkbox" name="rocks"
-              id="rocks">
+          <div class="attraction__wrapper-checkbox"><input class="attractions__input form-input-list" type="checkbox"
+              name="rocks" id="rocks">
             <label class="attractions__label" for="rocks">Красные скалы</label>
           </div>
 
@@ -125,9 +132,22 @@
       </div>
       <p class="footer__copyright">Разработано</p>
     </footer>
+    <section class="modal-failure modal">
+      <h3 class="modal-failure__h3 modal-h3">Что-то пошло не так</h3>
+      <p class="modal-failure__description modal-description">Проверьте поля, выделенные красным, скорее всего Вы забыли
+        их заполнить</p>
+      <button class="modal-failure__button button-button">Ок</button>
+    </section>
 
+    <section class="modal-sussecs modal">
+      <h3 class="modal-sussecs__h3 modal-h3">Ваш вызов отправлен</h3>
+      <p class="modal-sussecs__description modal-description">Спасибо за Ваше участие, Ваш отзыв уже поступил к нам. В
+        ближайшее время мы опубликуем его на сайте</p>
+      <button class="modal-sussecs__button button-button">Закрыть окно</button>
+    </section>
 
   </div>
+  <script src="js/navigation.js"></script>
 </body>
 
 </html>

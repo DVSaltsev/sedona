@@ -36,6 +36,7 @@
   display: flex;
   align-items: flex-end;
   // justify-content: center;
+  background-color: #62602A;
 }
 
 .video__panel {
@@ -120,6 +121,8 @@
     margin: 0 60px 100px;
   }
 
+
+
   .video__wrapper {
     min-height: 501px;
     background-image: url(../img/photo-video/video-desktop1.jpg);
@@ -161,11 +164,22 @@
     background-color: transparent;
   }
 
+  .video__wrapper {
+    min-height: 500px;
+    background-image: url(../img/photo-video/video-tablet.jpg);
+
+  }
 }
 
 @media (min-width:$desktop-width) {
   .video {
     margin: 0 200px 100px;
+  }
+
+  .video__wrapper {
+    min-height: 683px;
+    background-image: url(../img/photo-video/video-desktop.jpg);
+
   }
 
 }

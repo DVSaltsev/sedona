@@ -37,6 +37,10 @@
   align-items: flex-end;
   // justify-content: center;
   background-color: #62602A;
+
+  @media(min-resolution: 2dppx) {
+    background-image: url(../img/photo-video/video-mobile@2x.jpg);
+  }
 }
 
 .video__panel {
@@ -68,7 +72,6 @@
   margin: 0 23px;
   min-height: 3px;
   background: rgba(255, 255, 255, 0.2);
-
 }
 
 .video__scale::before {
@@ -113,19 +116,18 @@
   right: 25px;
 }
 
-
-
-
 @media (min-width:$tablet-width) {
   .video {
     margin: 0 60px 100px;
   }
 
-
-
   .video__wrapper {
     min-height: 501px;
-    background-image: url(../img/photo-video/video-desktop1.jpg);
+    background-image: url(../img/photo-video/video-tablet.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/photo-video/video-tablet@2x.jpg);
+    }
   }
 
   .video__panel {
@@ -135,14 +137,12 @@
     position: static;
     justify-content: space-between;
     padding: 0 35px;
-
   }
 
   .video__button-replay {
     position: static;
     background-image: url(../img/photo-video/replay-tab-desk.svg);
     background-color: transparent;
-
   }
 
   .video__scale {
@@ -163,12 +163,6 @@
     background-image: url(../img/photo-video/fullscreen-tab-desk.svg);
     background-color: transparent;
   }
-
-  .video__wrapper {
-    min-height: 500px;
-    background-image: url(../img/photo-video/video-tablet.jpg);
-
-  }
 }
 
 @media (min-width:$desktop-width) {
@@ -180,6 +174,8 @@
     min-height: 683px;
     background-image: url(../img/photo-video/video-desktop.jpg);
 
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/photo-video/video-desktop@2x.jpg);
+    }
   }
-
 }

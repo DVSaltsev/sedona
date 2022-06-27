@@ -10,10 +10,7 @@
   // justify-content: right;
   // margin: 0 20px;
   position: relative;
-
 }
-
-
 
 .header__logo-link {
   position: absolute;
@@ -36,33 +33,30 @@
   box-sizing: border-box;
   text-decoration: none;
   padding: 10px;
-
-
-  // vertical-align: middle;
-
   align-items: center;
   justify-content: center;
   cursor: pointer;
-
 }
 
 .header__nav-link--active {}
-
-
 
 .header__main-banner {
   background-image: url(../img/header/intro-triangle-mobile.svg), url(../img/header/header-back-mobile.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 158px;
+  height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
   background-position-x: 50%;
   //background-position-y: 100%;
   background-color: #75A5CA;
-}
 
+  @media (min-resolution: 2dppx) {
+    background-image: url(../img/header/intro-triangle-mobile.svg), url(../img/header/header-back-mobile@2x.jpg);
+  }
+
+}
 
 .header__main-banner--index {
   min-height: 0px;
@@ -76,10 +70,11 @@
 //   min-height: 389px;
 // }
 
-
 .header__title-img {
   margin: 0 20px;
   width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 @media (max-width: $mobile-width-only) {
@@ -179,7 +174,6 @@
 
   }
 
-
   .header__left-link {
     display: flex;
     justify-content: center;
@@ -214,10 +208,17 @@
 
   .header__main-banner {
     background-image: url(../img/header/intro-triangle-tablet.svg), url(../img/header/back-tablet.jpg);
-    min-height: 518px;
+    height: 290px;
     background-position-x: 50%;
-    //background-position-y: 100%;
 
+    //background-position-y: 100%;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/header/intro-triangle-tablet.svg), url(../img/header/back-tablet@2x.jpg);
+    }
+  }
+
+  .header__main-banner--index {
+    height: 518px;
   }
 
   .subadvantages__text {
@@ -228,6 +229,12 @@
     max-width: 30%;
     max-height: 30%;
   }
+
+  .header__title-img {
+    // margin: 0 370px;
+
+  }
+
 }
 
 @media (min-width: $desktop-width) {
@@ -238,9 +245,17 @@
 
   .header__main-banner {
     background-image: url(../img/header/intro-triangle-desktop.svg), url(../img/header/back-desktop.jpg);
-    // min-height: 518px;
+    height: 300px;
     background-position-x: 50%;
-    //background-position-y: 100%;
 
+    //background-position-y: 100%;
+    @media (min-resolution: 2dppx) {
+      background-image: url(../img/header/intro-triangle-desktop.svg), url(../img/header/back-desktop@2x.jpg);
+    }
+
+  }
+
+  .header__main-banner--index {
+    height: 518px;
   }
 }

@@ -115,6 +115,10 @@
   background-image: url(../img/index/photo-city@1x1-mobile.jpg);
   background-size: cover;
   background-color: #AAB7A5;
+
+  @media(min-resolution: 2dppx) {
+    background-image: url(../img/index/photo-city@2x-mobile.jpg);
+  }
 }
 
 .advantages__wrapper-item-photo-bridge {
@@ -131,6 +135,10 @@
   background-image: url(../img/index/photo-bridge@1x1-mobile.jpg);
   background-size: cover;
   background-color: #854B37;
+
+  @media(min-resolution: 2dppx) {
+    background-image: url(../img/index/photo-bridge@2x-mobile.jpg);
+  }
 }
 
 @media (max-width: $mobile-width-only) {
@@ -183,11 +191,20 @@
   .advantages__box-photo-town::after {
     min-height: 256px;
     background-image: url(../img/index/photo-city@1x1-tablet.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/index/photo-city@2x-tablet.jpg);
+
+    }
   }
 
   .advantages__box-photo-bridge::after {
     min-height: 256px;
     background-image: url(../img/index/photo-bridge@1x-tablet.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/index/photo-bridge@2x-tablet.jpg);
+    }
   }
 }
 
@@ -195,10 +212,18 @@
   .advantages__box-photo-town::after {
     min-height: 256px;
     background-image: url(../img/index/photo-city@1x-desktop.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/index/photo-city@2x-desktop.jpg);
+    }
   }
 
   .advantages__box-photo-bridge::after {
     min-height: 256px;
     background-image: url(../img/index/photo-bridge@1x-desktop.jpg);
+
+    @media(min-resolution: 2dppx) {
+      background-image: url(../img/index/photo-bridge@2x-desktop.jpg);
+    }
   }
 }

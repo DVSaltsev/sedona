@@ -62,20 +62,18 @@
   left: 10%;
   padding: 0;
   cursor: pointer;
-  color: #5C6870;
+  fill: #5C6870;
 }
 
 
 .video__button-replay:hover .video__svg-replay {
-  color: $grey-700;
+  fill: $grey-700;
 }
 
 .video__button-replay:active .video__svg-replay {
-  color: #333333;
+  fill: #333333;
   opacity: 0.3;
 }
-
-
 
 .video__button-subtitles {
   border: none;
@@ -85,15 +83,15 @@
   bottom: -100%;
   padding: 0;
   cursor: pointer;
-  color: #5C6870;
+  fill: #5C6870;
 }
 
 .video__button-subtitles:hover .video__svg-subtitles {
-  color: $grey-700;
+  fill: $grey-700;
 }
 
 .video__button-subtitles:active .video__svg-subtitles {
-  color: #333333;
+  fill: #333333;
   opacity: 0.3;
 }
 
@@ -105,15 +103,15 @@
   bottom: -100%;
   padding: 0;
   cursor: pointer;
-  color: #5C6870;
+  fill: #5C6870;
 }
 
 .video__button-full:hover .video__svg-full {
-  color: $grey-700;
+  fill: $grey-700;
 }
 
 .video__button-full:active .video__svg-full {
-  color: #333333;
+  fill: #333333;
   opacity: 0.3;
 }
 
@@ -165,7 +163,7 @@
 
   .video__button-replay {
     position: static;
-    color: #FFFFFF;
+    fill: #FFFFFF;
   }
 
   .video__button-replay:hover .video__svg-replay {
@@ -178,7 +176,7 @@
 
   .video__button-subtitles {
     position: static;
-    color: #FFFFFF;
+    fill: #FFFFFF;
   }
 
   .video__button-subtitles:hover .video__svg-subtitles {
@@ -191,7 +189,7 @@
 
   .video__button-full {
     position: static;
-    color: #FFFFFF;
+    fill: #FFFFFF;
   }
 
   .video__button-full:hover .video__svg-full {

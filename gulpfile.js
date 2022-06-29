@@ -8,7 +8,37 @@ const csso = require("postcss-csso");
 const rename = require("gulp-rename");
 const htmlmin = require("gulp-htmlmin");
 const terser = require("gulp-terser");
-const imagemin = require("gulp-imagemin");дл
+const imagemin = require("gulp-imagemin");
+const webp = require("gulp-webp");
+const svgstore = require("gulp-svgstore");
+const del = require("del");
+const sync = require("browser-sync").create();
+
+// Styles
+
+const styles = () => {
+  return gulp.src("source/sass/style.scss")
+    .pipe(plumber())
+    .pipe(sourcemap.init())
+    .pipe(sass())
+    .pipe(postcss([
+      autoprefixer(),
+    ]))
+    // Отличие от курса
+    .pipe(gulp.dest("build/css"))
+    .pipe(postcss([
+      csso()
+    ]))
+    // Отличие от курса
+
+    .pipe(rename("style.min.css"))
+    .pipe(sourcemap.write("."))
+    .pipe(gulp.dest("build/css"))
+    .pipe(sync.stream());
+}
+
+exports.styles = styles;
+
 // HTML
 
 const html = () => {
@@ -19,6 +49,7 @@ const html = () => {
 
 // Scripts
 
+// Отличие
 const scripts = () => {
   return gulp.src("source/js/*.js")
     .pipe(gulp.dest("build/js"))

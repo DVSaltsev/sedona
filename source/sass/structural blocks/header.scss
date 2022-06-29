@@ -43,14 +43,18 @@
 .header__main-banner {
   background-image: url(../img/header/intro-triangle-mobile.svg), url(../img/header/header-back-mobile.jpg);
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100%, cover;
+  // background-position-x: 50%;
+  background-position-y: 100%;
+  background-color: #75A5CA;
+
+
   height: 150px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background-position-x: 50%;
-  //background-position-y: 100%;
-  background-color: #75A5CA;
+
+
 
   @media (min-resolution: 2dppx) {
     background-image: url(../img/header/intro-triangle-mobile.svg), url(../img/header/header-back-mobile@2x.jpg);

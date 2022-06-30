@@ -156,10 +156,11 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/*/.scss", gulp.series(styles, reload));
-  gulp.watch("source/js/.js", gulp.series(scripts));
-  gulp.watch("source/.html").on("change", reload);
+  gulp.watch("source/sass/**/*.scss", gulp.series(styles, reload));
+  gulp.watch("source/js/*.js", gulp.series(scripts));
+  gulp.watch("source/*.html").on("change", reload);
 }
+
 
 // Build
 

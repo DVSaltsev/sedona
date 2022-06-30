@@ -156,9 +156,9 @@ const reload = (done) => {
 // Watcher
 
 const watcher = () => {
-  gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
-  gulp.watch("source/js/*.js", gulp.series(scripts));
-  gulp.watch("source/*.html").on("change", sync.reload);
+  gulp.watch("source/sass/*/.scss", gulp.series(styles, reload));
+  gulp.watch("source/js/.js", gulp.series(scripts));
+  gulp.watch("source/.html").on("change", reload);
 }
 
 // Build

@@ -25,6 +25,8 @@
   color: #FFFFFF;
   mix-blend-mode: normal;
   text-align: center;
+  padding-top: 32px;
+  margin-bottom: 0;
 }
 
 .advantages__number-photo {
@@ -37,6 +39,7 @@
   color: #FFFFFF;
   mix-blend-mode: normal;
   text-align: center;
+  margin-bottom: 0;
 }
 
 .advantages__text-lid-photo {
@@ -49,6 +52,7 @@
   color: #FFFFFF;
   mix-blend-mode: normal;
   text-align: center;
+  margin-bottom: 18px;
 }
 
 .advantages__simple {
@@ -98,11 +102,18 @@
 .advantages__box-photo {
   background: #81B3D2;
   mix-blend-mode: normal;
-  // display: none;
+}
+
+.advantages__box-photo-town {
+  background-image: url(../img/index/dubl-triangl-mobile.svg);
+  background-repeat: no-repeat;
+  // background-position: top center;
+  // background-size: cover;
 }
 
 .advantages__wrapper-item-photo-town {
   // padding: 0 20px;
+
 }
 
 .advantages__box-photo-town::after {
